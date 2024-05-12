@@ -11,11 +11,11 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
+/* html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-}
+} */
 
 /*
  * Remove text-shadow in selection highlight:
@@ -86,9 +86,27 @@ textarea {
 
 /******** GLOBAL STYLES ********/
 html {
-  scroll-behavior: smooth;
+  font-size: 1rem;
+  min-height: 500px;
 }
+
+body {
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  color: #e2e3ed;
+  text-align: center;
+  background-image: url("../img/background.png");
+  background-position: top;
+  background-color: #0e0d0d;
+}
+
 /******** HEADER STYLES ********/
+.logo-img img {
+  vertical-align: middle;
+  padding: 50px 20px;
+  width: 91%;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -96,41 +114,115 @@ header {
   flex-flow: row wrap;
 }
 
-.logo-img img {
-  vertical-align: middle;
-  padding: 50px 20px 50px 20px
-}
-
 /******** MAIN STYLES ********/
-body {
-  background-image: url("../img/background.png");
-  background-position: top;
+
+.mission-wrapper,
+.lets-connect-wrapper,
+.slider-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 20px 20px 20px 20px;
 }
 
-.container .btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  background-color: #787570;
-  color: #fff;
-  font-size: 44px;
-  padding: 16px 30px;
-  border: none;
-  cursor: pointer;
-  border-radius: 20px;
+.mission-wrapper {
+  background-color: #B19376;
+  opacity: 80%;
+}
+
+.mission-text,
+.mission-title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.mission-title {
+  font-size: 45px;
+  font-style: bolder;
   text-align: center;
-  text-decoration: none;
-  font-family: "Poly", serif;
+  color: #fff;
 }
 
-.container .btn:hover {
-  background-color: #6d522f;
-  color: white;
+.mission-text {
+  color: #fff;
+  font-size: 1.5em;
+  font-style: oblique;
+  text-align: center;
+}
+
+.slider-wrapper {
+  text-align: center;
+  background-color: #504133;
+  opacity: 0.7;
+  flex-direction: column;
+}
+
+.slider-wrapper img {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.slider-title {
+  color: #fff;
+  font-size: 2.5em;
+}
+
+div.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+  width: 91%;
 }
 
 /******** BOTTOM SECTION ********/
+footer {
+  background-color: #0e0d0d;
+  opacity: 85%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.connect-title {
+  font-size: 1.5em;
+  font-family: "Poly", serif;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.linkedin-button img {
+  padding-right: 20px;
+} 
+
+.github-button img {
+  padding-right: 20px;
+}
+
+.pinterest-button img {
+  padding-right: 20px;
+}
+
+.email-button img {
+  padding-right: 20px;
+}
+
+.copyright {
+  font-weight: lighter;
+  font-size: 0.5em;
+}
 
 /* ==========================================================================
    Helper classes
