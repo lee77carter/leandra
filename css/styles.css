@@ -88,6 +88,7 @@ textarea {
 html {
   font-size: 1rem;
   min-height: 500px;
+  padding: 0;
 }
 
 body {
@@ -123,11 +124,13 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 20px 20px 20px 20px;
+  padding: 100px 20px 20px 20px;
 }
 
 .mission-wrapper {
   background-color: #B19376;
+  background-repeat: no-repeat;
+  background-size: auto;
   opacity: 80%;
 }
 
@@ -146,8 +149,7 @@ header {
 
 .mission-text {
   color: #fff;
-  font-size: 1.5em;
-  font-style: oblique;
+  font-size: 2.5em;
   text-align: center;
 }
 
@@ -176,7 +178,7 @@ div.scroll-container {
 
 div.scroll-container img {
   padding: 10px;
-  width: 91%;
+  width: 99%;
 }
 
 /******** BOTTOM SECTION ********/
@@ -205,7 +207,7 @@ footer {
 
 .linkedin-button img {
   padding-right: 20px;
-} 
+}
 
 .github-button img {
   padding-right: 20px;
@@ -221,7 +223,7 @@ footer {
 
 .copyright {
   font-weight: lighter;
-  font-size: 0.5em;
+  font-size: 1em;
 }
 
 /* ==========================================================================
@@ -306,6 +308,59 @@ footer {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+           /*MINI TABLET*/
+@media only screen and (min-width: 521px) {
+
+  /******** HEADER STYLES ********/
+  /******** MAIN STYLES ********/
+  div.scroll-container img {
+    width: 66%;
+  }
+
+  /******** BOTTOM SECTION ********/
+}
+           /*MINI TABLET*/
+@media only screen and (min-width: 621px) {
+
+  /******** HEADER STYLES ********/
+  /******** MAIN STYLES ********/
+
+  div.scroll-container img {
+    width: 55%;
+  }
+
+  /******** BOTTOM SECTION ********/
+}
+           /*TABLET*/
+@media only screen and (min-width: 768px) {
+
+  /******** HEADER STYLES ********/
+  /******** MAIN STYLES ********/
+  .mission-text {
+    font-size: 3.0em;
+  }
+
+  div.scroll-container img {
+    width: 43%;
+  }
+
+  /******** BOTTOM SECTION ********/
+}
+
+@media only screen and (min-width: 1200px) {
+
+  /******** HEADER STYLES ********/
+  /******** MAIN STYLES ********/
+  .mission-title {
+    font-size: 72px;
+  }
+
+  div.scroll-container img {
+    width: 30%;
+  }
+
+  /******** BOTTOM SECTION ********/
+}
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
