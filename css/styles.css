@@ -137,12 +137,10 @@ header {
 .mission-text,
 .mission-title {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
 }
 
 .mission-title {
   font-size: 45px;
-  font-style: bolder;
   text-align: center;
   color: #fff;
 }
