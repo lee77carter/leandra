@@ -306,7 +306,7 @@ footer {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-           /*MINI TABLET*/
+/*MINI TABLET*/
 @media only screen and (min-width: 521px) {
 
   /******** HEADER STYLES ********/
@@ -317,7 +317,8 @@ footer {
 
   /******** BOTTOM SECTION ********/
 }
-           /*MINI TABLET*/
+
+/*MINI TABLET*/
 @media only screen and (min-width: 621px) {
 
   /******** HEADER STYLES ********/
@@ -329,7 +330,8 @@ footer {
 
   /******** BOTTOM SECTION ********/
 }
-           /*TABLET*/
+
+/*TABLET*/
 @media only screen and (min-width: 768px) {
 
   /******** HEADER STYLES ********/
