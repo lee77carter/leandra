@@ -95,24 +95,23 @@ body {
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
   color: #e2e3ed;
-  text-align: center;
-  background-image: url("../img/background.png");
+  text-align: center;  
   background-position: top;
-  background-color: #0e0d0d;
+  /* background-color: #0e0d0d; */
+  background-color: #e4e3e1
 }
 
 /******** HEADER STYLES ********/
-.logo-img img {
+/* .logo-img img {
   vertical-align: middle;
-  padding: 50px 20px;
-  width: 91%;
-}
+  width: 100%;
+} */
 
-header {
+.logo-img {
+  background-image: url(../img/header.png);
   display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-flow: row wrap;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 /******** MAIN STYLES ********/
