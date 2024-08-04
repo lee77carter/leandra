@@ -104,8 +104,7 @@ body {
 /******** HEADER STYLES ********/
 .logo-img img {
   vertical-align: middle;
-  padding: 50px 20px;
-  width: 91%;
+  width: 100%;
 }
 
 header {
